@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ColoredBox(color: Colors.indigo, child: CurrencyConverterPage()),
+      home: ColoredBox(
+        color: const Color.fromARGB(255, 255, 121, 4),
+        child: CurrencyConverterPage(),
+      ),
     );
   }
 }
