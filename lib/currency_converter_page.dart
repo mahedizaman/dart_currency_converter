@@ -33,7 +33,7 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
 
             children: [
               Text(
-                'BDT - ${result.toString()}',
+                'BDT - ${result != 0 ? result.toStringAsFixed(3) : result.toStringAsFixed(0)}',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
